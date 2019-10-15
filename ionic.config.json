@@ -1,5 +1,7 @@
 {
   "name": "lYrA",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }
