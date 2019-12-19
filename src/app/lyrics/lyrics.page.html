@@ -1,25 +1,13 @@
 
-<ion-app>
-      <ion-header translucent>
-        <ion-toolbar>
-          <ion-title>List</ion-title>
-        </ion-toolbar>
-      </ion-header>
-  <ion-content fullscreen>
+<ion-app *ngIf="lyric">
     <ion-toolbar>
-        <ion-button (click)="goBack()">
-          <ion-icon slot="icon-only" name="arrow-back"></ion-icon>
-        </ion-button>
-      <ion-title>Titre hira</ion-title>
+        <ion-buttons slot="secondary">
+          <ion-button (click)="goBack()"><ion-icon slot="icon-only" name="arrow-back"></ion-icon></ion-button>
+        </ion-buttons>
+        <ion-title>{{lyric.title}}</ion-title>
     </ion-toolbar>
-    <ion-grid>
-        <ion-row>
-          <ion-col class="ion-padding">
-            <div>
-                Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un imprimeur anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte. Il n'a pas fait que survivre cinq siècles, mais s'est aussi adapté à la bureautique informatique, sans que son contenu n'en soit modifié. Il a été popularisé dans les années 1960 grâce à la vente de feuilles Letraset contenant des passages du Lorem Ipsum, et, plus récemment, par son inclusion dans des applications de mise en page de texte, comme Aldus PageMaker.
-            </div>
-          </ion-col>
-        </ion-row>
-    </ion-grid>
+  <ion-content fullscreen>
+      <div [innerHTML]="lyric.lyric">
+      </div>
   </ion-content>
 </ion-app>

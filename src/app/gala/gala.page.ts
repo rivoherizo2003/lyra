@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { DatabaseService } from '../service/database.service';
-import { Lyric } from '../interface/lyric';
+import { Lyric } from '../classes/lyric';
 
 @Component({
   selector: 'app-gala',
@@ -8,7 +8,7 @@ import { Lyric } from '../interface/lyric';
   styleUrls: ['./gala.page.scss'],
 })
 export class GalaPage implements OnInit {
-  lyricsGala: Lyric[] = [];
+  lyricsGala: Lyric[];
   constructor(private db: DatabaseService) { }
 
   ngOnInit() {

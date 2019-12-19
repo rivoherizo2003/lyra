@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { DatabaseService } from '../service/database.service';
+
 
 @Component({
   selector: 'app-tabs',
@@ -7,6 +9,10 @@ import { Component } from '@angular/core';
 })
 export class TabsPage {
 
-  constructor() {}
+  constructor(private db: DatabaseService) {}  
+  
+  ngOnInit() {
+    
+  }
 
 }

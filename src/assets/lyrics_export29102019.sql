@@ -1,3 +1,4 @@
+BEGIN TRANSACTION;
 CREATE TABLE IF NOT EXISTS "lyrics" (
 	"id"	INTEGER PRIMARY KEY AUTOINCREMENT,
 	"title"	TEXT,
@@ -6,7 +7,6 @@ CREATE TABLE IF NOT EXISTS "lyrics" (
 	"key_song"	TEXT,
 	"type"	INTEGER
 );
-DELETE FROM "lyrics";
 INSERT INTO "lyrics" VALUES (9,'ADIM-PANAHY','1-Holazaiko Aminao eto anio
 Raiko ô ! zany adim-panahy
 Fa tafiotra miampy tadio
@@ -81,3 +81,4 @@ Ref: Olon-tsinontsinona nomenao ny rariny
 Tsy mahay misaotra tsy mba nanaja Anao
 Ondry efa very, ondry efa nania
 Nefa mbola notadiavinao',NULL,NULL,1);
+COMMIT;

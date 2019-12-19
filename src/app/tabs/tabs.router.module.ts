@@ -39,7 +39,7 @@ const routes: Routes = [
         ]
       },
       {
-        path: 'lyric',
+        path: 'lyric/:id',
         children: [
           {
             path:'',
@@ -57,7 +57,7 @@ const routes: Routes = [
   },
   {
     path: '',
-    redirectTo: '/tabs/tab1',
+    redirectTo: '/lYrA/home',
     pathMatch: 'full'
   }
 ];
