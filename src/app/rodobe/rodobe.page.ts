@@ -17,9 +17,12 @@ export class RodobePage implements OnInit {
       if (rdy) {
         this.db.getLyricsRodobe().subscribe(lyricsRodobe => {
           this.lyricsRodobe = lyricsRodobe;
-        })
+        });
       }
-    })
+    });
   }
 
+  searchRodobe(term: string) {
+    
+  }
 }

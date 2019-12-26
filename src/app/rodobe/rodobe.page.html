@@ -1,15 +1,15 @@
 <ion-app>
   <ion-content fullscreen>
+    <ion-searchbar showCancelButton="never" color="success" type="text" #searchBox ionChange=""
+    placeholder="Hitady"></ion-searchbar>
     <ion-list>
       <ion-list-header>
         Hira rodobe
       </ion-list-header>
-      <ion-searchbar showCancelButton="never" color="success" placeholder="Hitady"></ion-searchbar>
       <ion-item button [routerLink]="['/lYrA/lyric',rodobe.id]" *ngFor="let rodobe of lyricsRodobe">
         <ion-label>
           <h2>{{rodobe.title}}</h2>
           <h3>Namorona: {{rodobe.author}} clé: {{rodobe.keySong}}</h3>
-          <p>{{rodobe.lyric | slice:0:30}}...</p>
         </ion-label>
       </ion-item>
     </ion-list>

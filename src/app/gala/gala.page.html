@@ -1,16 +1,15 @@
 <ion-app>
   <ion-nav>
-    <ion-content>
+    <ion-content fullscreen>
+      <ion-searchbar placeholder="Hitady" color="success" showCancelButton="never"></ion-searchbar>
       <ion-list>
         <ion-list-header>
           Hira gala
         </ion-list-header>
-        <ion-searchbar placeholder="Hitady" color="success" showCancelButton="never"></ion-searchbar>
         <ion-item button [routerLink]="['/lYrA/lyric',gala.id]" *ngFor="let gala of lyricsGala">
           <ion-label>
             <h2>{{gala.title}}</h2>
             <h3>Namorona: {{gala.author}} clé: {{gala.keySong}}</h3>
-            <p>{{gala.lyric | slice:0:30}}...</p>
           </ion-label>
         </ion-item>
       </ion-list>

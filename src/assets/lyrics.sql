@@ -7,7 +7,7 @@ CREATE TABLE IF NOT EXISTS "lyrics" (
 	"type"	INTEGER
 );
 DELETE FROM "lyrics";
-INSERT INTO "lyrics" VALUES (9,'ADIM-PANAHY','1-Holazaiko Aminao eto anio
+INSERT INTO "lyrics" VALUES (9,'ADIM-PANAHY','<p>1-Holazaiko Aminao eto anio
 Raiko ô ! zany adim-panahy
 Fa tafiotra miampy tadio
 Ka toa mila hanafotra ahy
@@ -19,7 +19,8 @@ Hiery Aminao ve ? reo ota izay natao
 Aza jerean re zao hadalako izao
 Ny famindram-ponao io no andrasako
 Hamafa ny talaho sy ranomasoko
-</br>
+</p>
+<p>
 2-Hatrizay aho, naniasia
 Nanalavitra ny valanao
 Kanjo sendra ny rano mania
@@ -31,7 +32,7 @@ Ka ho faty ity zanakao
 Ny halemeko ve ? Indro efa fantatrao
 Fa nofo ihany anie ity adalanao
 Ny ranao latsaka mba hanadio ahy
-Io no hanafaka ny ratran''ny fanahy',NULL,NULL,2),
+Io no hanafaka ny ratran''ny fanahy</p>',NULL,NULL,2),
  (10,'AFAFY','REF :
 Afafy ny teny ho henonao
 Afafy ny teny ho fantatrao
@@ -39,13 +40,13 @@ Afafy koa aza manamafy ny fonao ianao
 Afafy ho anao zay manantena
 Ny handray ny tena famonjena
 Koa ekeo amin''ny fo zay tena rehetra omena
-</br>
+
 1-Ny lanitra sy izao rehetra izao
 Ho levona,fa maharitra mandrakizay
 Ny teninAndriamanitra
 Mbola ho rovitra toy ny fitafina ny andronao
 Koa mba hevero re lay tsy miova
-</br>
+
 2-Tonga tety ny Zanaky ny Ray dia Jesosy
 Tsy hanameloka izao tontolo izao
 Fa ny hamonjy azy
@@ -55,13 +56,13 @@ Zay te ho velona dia mino Azy',NULL,NULL,2),
 Hanjaka amin''ny fiainako, ho Tompon''ny tena sains syy NY fo.
 Hay ve NY fahotako no rindrina nanasaraka ahy taminao
 ka dia nijaly aho be NY nanjo, nangirifiry mafy tsy tantin''ny FO
-</br>
+
 réf: Sambatra aho ry Jesosy o! satria navelanao NY heloko
 Fiadanam-po, fiadanam-po
 Sambatra aho ry Jesosy o! satria navelanao NY heloko.
 fiainan-tsambatra any an-danitra.
 Voninahitra omena Anao
-</br>
+
 NY fahoriana izay nangeja tokoa,tsy MBA nataonao hanakivy NY FO
 fa fianarana hahatoky Ilay Tsitoha
 ilay be fitiavana sy be indrafo
@@ -76,7 +77,7 @@ No hamomjy sy handinindinika
 Ny very ho tadiaviko
 Ny babo hampodiako
 Ny malemy hohatanjahiko
-</br>
+
 Ref: Olon-tsinontsinona nomenao ny rariny
 Tsy mahay misaotra tsy mba nanaja Anao
 Ondry efa very, ondry efa nania
