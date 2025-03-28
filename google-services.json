@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "410309698743",
+    "project_id": "lyra-fda0e",
+    "storage_bucket": "lyra-fda0e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:410309698743:android:d45e78a1b92519942d9932",
+        "android_client_info": {
+          "package_name": "com.example.lyra"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "410309698743-q3nc7shr0uddsskv8c8ebfbo8mocpf7m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA5XbbE2OF_tmMYdnmyr0J0jpzBGgfdUvs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "410309698743-q3nc7shr0uddsskv8c8ebfbo8mocpf7m.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
