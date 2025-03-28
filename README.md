@@ -3,6 +3,7 @@
 Lyrics A.Fa.Fi
 
 This mobile app will be used to list all songs of the Malagasy Choir A.Fa.Fi
+
 # install sdk tools
 ```
 sudo apt update && sudo apt install android-sdk
@@ -24,10 +25,9 @@ sudo apt update && sudo apt install android-sdk
     ```
 
 # Release apk
-flutter clean
-flutter pub get
-flutter pub run flutter_launcher_icons
-flutter build apk --release --split-per-abi
+```bash
+flutter clean && flutter pub get && flutter pub run flutter_launcher_icons && flutter build apk --release --split-per-abi
+```
 
 # install dependencies flutter fire
 - docker exec -it containerid bash<br>
