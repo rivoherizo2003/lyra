@@ -28,6 +28,7 @@ Future<List<Widget>> buildSearchResult(Future<List<Lyric>> lyrics,
       title: Text(lyric.title),
       onTap: () {
         searchController.closeView(lyric.title);
+        searchController.clear();
         Navigator.push(
           context,
           MaterialPageRoute(
@@ -49,24 +50,28 @@ class _CustomSearchBar extends State<CustomSearchBar> {
   Widget build(BuildContext context) {
     final screenHeight = MediaQuery.of(context).size.height;
     return ConstrainedBox(
-      constraints: BoxConstraints(
-        maxHeight:
-            screenHeight * 0.5, // This will make it occupy half of the screen
-      ),
-      child: SearchAnchor.bar(
-        barHintText: widget.hintText,
-        viewConstraints: const BoxConstraints(
-          maxHeight: 300, // You can also set a fixed height in logical pixels
+        constraints: BoxConstraints(
+          maxHeight:
+              screenHeight * 0.5, // This will make it occupy half of the screen
         ),
-        suggestionsBuilder:
-            (BuildContext context, SearchController searchController) {
-          Future<List<Lyric>> results = widget.onChanged(searchController.text);
-          if (searchController.text.isEmpty) {
-            return [];
-          }
-          return buildSearchResult(results, searchController, context);
-        },
-      ),
-    );
+        child: Padding(
+            padding:
+                const EdgeInsets.symmetric(horizontal: 16.0, vertical: 8.0),
+            child: SearchAnchor.bar(
+              barHintText: widget.hintText,
+              viewConstraints: const BoxConstraints(
+                maxHeight:
+                    300, // You can also set a fixed height in logical pixels
+              ),
+              suggestionsBuilder:
+                  (BuildContext context, SearchController searchController) {
+                Future<List<Lyric>> results =
+                    widget.onChanged(searchController.text);
+                if (searchController.text.isEmpty) {
+                  return [];
+                }
+                return buildSearchResult(results, searchController, context);
+              },
+            )));
   }
 }
