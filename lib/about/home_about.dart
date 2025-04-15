@@ -3,6 +3,7 @@ import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:lyra/service/firestore_service.dart';
 import 'package:lyra/shared/widget/image_section.dart';
+import 'package:lyra/widgets/version_display.dart';
 
 const htmlDataLyra = """
 <p>LYRA: LYrics A.FA.FI</p>
@@ -42,8 +43,13 @@ class _AboutHomeState extends State<AboutHome> {
                 ImageSection(image: "assets/afafi_official_little.jpg"),
                 Padding(
                     padding: EdgeInsets.all(20.0),
-                    child:
-                        ImageSection(image: "assets/icon.png", maxHeight: 100)),
+                    child: Stack(
+                      children: [
+                        ImageSection(image: "assets/icon.png", maxHeight: 100),
+                        Positioned(
+                            bottom: -2, right: 15, child: VersionDisplay())
+                      ],
+                    )),
                 Padding(
                   padding: EdgeInsets.all(20.0),
                   child: Text(

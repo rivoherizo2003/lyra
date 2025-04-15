@@ -1,4 +1,4 @@
-package com.example.lyra_v2
+package com.codemdg.lyra_v2
 
 import io.flutter.embedding.android.FlutterActivity
 

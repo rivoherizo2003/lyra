@@ -57,10 +57,9 @@ class _ViewSongDetail extends State<ViewSongDetail> {
           body: Container(
             decoration: const BoxDecoration(
               image: DecorationImage(
-                image: AssetImage("assets/fond_lyric.jpg"),
-                fit: BoxFit.cover,
-                opacity: 0.2
-              ),
+                  image: AssetImage("assets/fond_lyric.jpg"),
+                  fit: BoxFit.cover,
+                  opacity: 0.2),
             ),
             height: double.infinity,
             child: FutureBuilder<Lyric>(

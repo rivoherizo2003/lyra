@@ -24,7 +24,9 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: CustomNavigatorHome(key: null,),
+      home: CustomNavigatorHome(
+        key: null,
+      ),
     );
   }
 }
