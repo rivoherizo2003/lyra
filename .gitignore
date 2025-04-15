@@ -54,4 +54,4 @@ ios/Runner/GoogleService-Info.plist
 
 **/android/key.properties
 **/*.keystore
-upload-keystore.jks
+/android/app/upload-keystore.jks
