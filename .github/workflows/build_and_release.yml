@@ -111,8 +111,8 @@ jobs:
         uses: softprops/action-gh-release@v1
         with:
           files: build/app/outputs/flutter-apk
-          tag_name: v${{ github.run_number }}
-          name: Release ${{ github.run_number }}
+          tag_name: ${{ github.ref_name }}
+          name: ${{ github.ref_name }}
           draft: false
           prerelease: false
         env:
