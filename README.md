@@ -44,7 +44,7 @@ keytool -genkey -v -keystore upload-keystore.jks -keyalg RSA -keysize 2048 -vali
 - firebase login
 - flutterfire configure<br>
 
-# push new tab
+# push new tag
 ```bash
 git tag v.x.x
 git push origin vx.x.x 
