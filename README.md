@@ -8,6 +8,11 @@ This mobile app will be used to list all songs of the Malagasy Choir A.Fa.Fi
 sudo apt update && sudo apt install android-sdk
 ```
 
+# install chromium
+```bash
+sudo apt-get install -y chromium
+```
+
 ## Connect device for usb debugging
 # Activate usb debugging for in the device settings<br>
 # Run the following command in the container to check if the device is connected
